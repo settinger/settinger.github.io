@@ -238,6 +238,13 @@ span {
     )}</p></div>`;
     document.getElementById("mongolian-inline-demo").innerHTML = bodyText;
   };
+  // Function to call when alignment selector changes
+  const changeAlignment = () => {
+    let spans = document.querySelectorAll("span.inline");
+    for (let span of spans) {
+      span.style.verticalAlign = $alignment.value;
+    }
+  };
   // Function to call when body text selection changes
   // (Also forces a refresh of inline texts)
   const changeBody = () => {
@@ -253,6 +260,7 @@ span {
     renderBody();
     updateInlineTextList();
     updateSpans();
+    changeAlignment();
   };
   // Function to call when inline text length changes
   const changeLength = () => {
@@ -267,13 +275,6 @@ span {
     if (newOrientVal == orientVal) return;
     orientVal = newOrientVal;
     updateSpanOrientation();
-  };
-  // Function to call when alignment selector changes
-  const changeAlignment = () => {
-    let spans = document.querySelectorAll("span.inline");
-    for (let span of spans) {
-      span.style.verticalAlign = $alignment.value;
-    }
   };
   $bodyText.oninput = changeBody;
   $inlineText.oninput = changeInline;
