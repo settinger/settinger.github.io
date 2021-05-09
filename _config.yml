@@ -1,6 +1,12 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+locale: "en-US"
+title: Sam Ettinger
+logo: /assets/img/logo.jpg
+favicon: /assets/img/favicon.ico
+email: ettingersam@gmail.com
+description: "I'm good at electronics and okay at websites, you can hire me for these or other services"
+baseurl: "/"
+url: "https://settinger.github.io"
+repository: "settinger/settinger.github.io"
+twitter_username: dhammarskjold
+github_username: settinger
 theme: jekyll-theme-minimal

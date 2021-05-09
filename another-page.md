@@ -1,5 +1,6 @@
 ---
 layout: default
+title: aaaaa
 ---
 
 ## Welcome to another page

@@ -1,4 +1,9 @@
-_site
-.sass-cache
 Gemfile.lock
 *.gem
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.vscode/
+.history
+.ionide
